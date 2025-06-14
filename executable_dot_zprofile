@@ -1,0 +1,16 @@
+# set shell configuration to include the Homebrew binaries
+export PATH="/usr/local/bin:$PATH"
+eval "$(brew shellenv)"
+
+# vscode `code` shell command
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+# nvm: Appending nvm source string to /Users/ethancrown/.zshrc
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Initialize pyenv in your shell:
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
