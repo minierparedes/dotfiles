@@ -1,0 +1,3 @@
+.config/gcloud/
+.config/exercism/user.json
+.config/github-copilot/apps.json
