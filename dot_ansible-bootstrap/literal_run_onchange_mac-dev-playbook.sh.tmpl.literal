@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+# mac-dev-playbook trigger: {{ include .mac_dev_playbook.path | sha256sum }}
+
+echo "Running mac-dev-playbook..."
+(cd {{ .mac_dev_playbook.path }} && ansible-playbook main.yml)
+{{ end }}

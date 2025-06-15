@@ -1,0 +1,3 @@
+mac_dev_playbook:
+  path: "~/mac-dev-playbook"
+  description: "A playbook for setting up a macOS development environment."
