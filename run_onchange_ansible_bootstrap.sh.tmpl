@@ -1,0 +1,15 @@
+#!/bin/bash
+# filepath: run_onchange_ansible_bootstrap.sh.tmpl
+
+# Template hash: {{ include "dot_ansible-bootstrap" | sha256sum }}
+
+set -e
+
+echo "Running Ansible bootstrap..."
+
+cd ~/.ansible-bootstrap
+
+# Run the playbook
+ansible-playbook setup.yml -i inventory --ask-become-pass
+
+echo "Ansible Bootstrap complete!"
