@@ -1,15 +1,19 @@
-#!/bin/bash
-# filepath: run_onchange_ansible_bootstrap.sh.tmpl
+#!/usr/bin/env bash
+# run_onchange_ansible_bootstrap.sh.tmpl
+#
+# This script will run ansible bootstrap whenever its contents change.
 
-# Template hash: {{ include "dot_ansible-bootstrap" | sha256sum }}
+{{- $dir := (printf "%s/.ansible-bootstrap" .chezmoi.homeDir) -}}
+{{- $sum := include (print $dir "/requirements.yml") | sha256sum }}
 
-set -e
+set -euo pipefail
 
-echo "Running Ansible bootstrap..."
+echo
+echo "⬢ Detected change in Ansible bootstrap (hash: {{ $sum }})"
+echo "▶ Running Ansible bootstrap tasks..."
 
-cd ~/.ansible-bootstrap
+cd {{ $dir }}
 
-# Run the playbook
-ansible-playbook setup.yml -i inventory --ask-become-pass
+ansible-playbook main.yml -i inventory --ask-become-pass
 
-echo "Ansible Bootstrap complete!"
+echo "Ansible bootstrap complete — all done!"
