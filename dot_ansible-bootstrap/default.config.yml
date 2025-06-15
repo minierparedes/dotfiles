@@ -94,13 +94,20 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 668429425, name: "Downcast             }
-  - { id: 1044549675, name: "Elmedia Video Player }
-  - { id: 409183694, name: "Keynote              }
-  - { id: 539883307, name: "LINE                 }
-  - { id: 441258766, name: "Magnet               }
-  - { id: 905953485, name: "NordVPN              }
-  - { id: 497799835, name: "Xcode                }
+  - id: 668429425
+    name: "Downcast"
+  - id: 1044549675
+    name: "Elmedia Video Player"
+  - id: 409183694
+    name: "Keynote"
+  - id: 539883307
+    name: "LINE"
+  - id: 441258766
+    name: "Magnet"
+  - id: 905953485
+    name: "NordVPN"
+  - id: 497799835
+    name: "Xcode"
 mas_email: ""
 mas_password: ""
 
