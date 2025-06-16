@@ -4,12 +4,17 @@
 # This script will run ansible bootstrap whenever its contents change.
 
 {{- $dir := (printf "%s/.ansible-bootstrap" .chezmoi.homeDir) -}}
-{{- $sum := include (print $dir "/requirements.yml") | sha256sum }}
+{{- $files := list "requirements.yml" "default.config.yml" "main.yml" }}
+{{- $sums := list }}
+{{- range $files }}
+  {{- $sums = append $sums (include (print $dir "/" .) | sha256sum) }}
+{{- end }}
+{{- $combinedSum := join "" $sums | sha256sum }}
 
 set -euo pipefail
 
 echo
-echo "⬢ Detected change in Ansible bootstrap (hash: {{ $sum }})"
+echo "⬢ Detected change in Ansible bootstrap (hash: {{ $combinedSum }})"
 echo "▶ Running Ansible bootstrap tasks..."
 
 cd {{ $dir }}
