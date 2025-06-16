@@ -54,13 +54,6 @@
           loop_control:
             loop_var: outer_item
           with_fileglob: "{{ post_provision_tasks | default(omit) }}"
-    - name: Clone iTerm2 color schemes repo
-      git:
-        repo: https://github.com/mbadolato/iTerm2-Color-Schemes.git
-        dest: "{{ ansible_env.HOME }}/.dotfiles/iTerm2-Color-Schemes"
-        update: yes
-    - name: Apply Ghostty theme (e.g., Solarized Dark)
-      copy:
-        src: "{{ ansible_env.HOME }}/.dotfiles/iTerm2-Color-Schemes/ghostty/Solarized Dark"
-        dest: "{{ ansible_env.HOME }}/.config/ghostty/config"
-        when: homebrew_cask_apps      
+
+
+
