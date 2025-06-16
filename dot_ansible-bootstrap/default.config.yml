@@ -353,7 +353,7 @@ vscode_settings:
   editor.minimap.enabled: false
   editor.tabCompletion: onlySnippets
   editor.wordWrap: 'on'
-  files.autoSave: onWindowChange
+  files.autoSave: onFocusChange
   git.autofetch: true
   highlight-matching-tag.styles:
     closing:
