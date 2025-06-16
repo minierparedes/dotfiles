@@ -93,6 +93,7 @@ homebrew_installed_packages:
   - zsh-completions
   - zsh-syntax-highlighting
   - tmux
+  - starship
 
 homebrew_taps: []
 
