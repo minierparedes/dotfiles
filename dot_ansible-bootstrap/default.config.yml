@@ -93,7 +93,9 @@ homebrew_installed_packages:
   - zsh-completions
   - zsh-syntax-highlighting
   - tmux
-  - starship
+  - tree
+  - zoxide
+  - oh-my-posh
 
 homebrew_taps: []
 

@@ -1,12 +1,11 @@
-font-family = BerkeleyMono Nerd Font
-#font-family = Iosevka Nerd Font
-# font-family = SFMono Nerd Font 
-font-size = 20
-theme = GruvboxDarkHard
+font-family = JetBrains Mono
+font-family = Symbols Nerd Font Mono
+font-size = 14
+theme = ""
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 adjust-cell-height = 35%
-# background-opacity = 0.96
+background-opacity = 0.96
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
@@ -15,8 +14,9 @@ window-padding-balance = true
 window-save-state = always
 macos-titlebar-style=transparent
 window-colorspace = "display-p3"
-background = 1C2021
-# foreground = d4be98
+background = "000000"
+foreground = "ffffff"
+
 
 # keybindings
 keybind = cmd+s>r=reload_config
@@ -43,17 +43,17 @@ keybind = cmd+s>8=goto_tab:8
 keybind = cmd+s>9=goto_tab:9
 
 # split
-keybind = cmd+s>\=new_split:right
-keybind = cmd+s>-=new_split:down
-
-keybind = cmd+s>j=goto_split:bottom
-keybind = cmd+s>k=goto_split:top
-keybind = cmd+s>h=goto_split:left
-keybind = cmd+s>l=goto_split:right
-
-keybind = cmd+s>z=toggle_split_zoom
-
-keybind = cmd+s>e=equalize_splits
+# keybind = ctrl+right=new_split:right
+# keybind = ctrl+right=new_split:down
+# 
+# keybind = cmd+s>j=goto_split:bottom
+# keybind = cmd+s>k=goto_split:top
+# keybind = cmd+s>h=goto_split:left
+# keybind = cmd+s>right=goto_split:right
+# 
+# keybind = cmd+s>z=toggle_split_zoom
+# 
+# keybind = cmd+s>e=equalize_splits
 
 # other
 copy-on-select = clipboard
