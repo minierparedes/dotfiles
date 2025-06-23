@@ -11,7 +11,6 @@ dockitems_remove:
   - TV
   - Podcasts
   - 'App Store'
-  - Launchpad
   - Safari
   - FaceTime
   - Maps
@@ -22,15 +21,33 @@ dockitems_remove:
   - Books
 
 dockitems_persist:
-  - name: "Slack"
-    path: "/Applications/Slack.app/"
-    pos: 9
-  - name: "IntelliJ IDEA CE"
-    path: "/Applications/IntelliJ IDEA CE.app/"
-    pos: 12
+  - name: "Mail"
+    path: "/System/Applications/Mail.app/"
+    pos: 3
+  - name: "Calendar"
+    path: "/System/Applications/Calendar.app/"
+    pos: 4
+  - name: "Notes"
+    path: "/System/Applications/Notes.app/"
+    pos: 5
+  - name: "System Settings"
+    path: "/System/Applications/System Settings.app/"
+    pos: 6
+  - name: "Ghostty"
+    path: "/Applications/Ghostty.app/"
+    pos: 7
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 8
   - name: "Passwords"
     path: "/Applications/Passwords.app/"
-    pos: 6
+    pos: 9
+  - name: "Obsidian"
+    path: "/Applications/Obsidian.app/"
+    pos: 10
+  - name: "IntelliJ IDEA CE"
+    path: "/Applications/IntelliJ IDEA CE.app/"
+    pos: 11
 
 configure_sudoers: false
 sudoers_custom_config: ""
