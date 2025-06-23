@@ -11,10 +11,17 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 # ------------------------
 
 
+# ------------------------
+# STARSHIP PROMPT
+# ------------------------
 
-# Oh My Posh
-export POSH_THEME="clean-detailed"
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/${POSH_THEME}.omp.json)"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
+
+# # Oh My Posh
+# export POSH_THEME="json"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/${POSH_THEME}.omp.json)"
+
 
 # ------------------------
 # Language environment managers
@@ -70,9 +77,8 @@ fi
 # ------------------------
 # EZA & Aliases
 # ------------------------
-
-export LS_COLORS="di=1;94:fi=1;97:ln=1;97:ex=1;97:*.log=1;97"
-alias ls="eza --group-directories-first --icons --color=always"
+export EZA_CONFIG_DIR="$HOME/.config/eza"
+alias ls="eza --group-directories-first --icons --color=never"
 
 alias src!="source ~/.zshrc && echo 'complete'"
 alias gl="git log --graph --pretty=format:'%C(yellow)%h%Creset %ad | %s%C(bold blue)%d%Creset' --date=short"
