@@ -4,58 +4,7 @@ configure_terminal: false
 configure_osx: false
 configure_sudoers: false
 
-# Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove:
-  - Launchpad
-  - TV
-  - Podcasts
-  - 'App Store'
-  - Safari
-  - FaceTime
-  - Maps
-  - Photos
-  - Contacts
-  - Reminders
-  - Notes
-  - Books
-
-dockitems_persist:
-  - name: "Mail"
-    path: "/System/Applications/Mail.app/"
-    pos: 3
-  - name: "Calendar"
-    path: "/System/Applications/Calendar.app/"
-    pos: 4
-  - name: "Notes"
-    path: "/System/Applications/Notes.app/"
-    pos: 5
-  - name: "System Settings"
-    path: "/System/Applications/System Settings.app/"
-    pos: 6
-  - name: "Ghostty"
-    path: "/Applications/Ghostty.app/"
-    pos: 7
-  - name: "Visual Studio Code"
-    path: "/Applications/Visual Studio Code.app/"
-    pos: 8
-  - name: "Passwords"
-    path: "/Applications/Passwords.app/"
-    pos: 9
-  - name: "Obsidian"
-    path: "/Applications/Obsidian.app/"
-    pos: 10
-  - name: "IntelliJ IDEA CE"
-    path: "/Applications/IntelliJ IDEA CE.app/"
-    pos: 11
-
-configure_sudoers: false
-sudoers_custom_config: ""
-# Example:
-# sudoers_custom_config: |
-#   # Allow users in admin group to use sudo with no password.
-#   %admin ALL=(ALL) NOPASSWD: ALL
-
+# Install Homebrew formulae (CLI tools)
 homebrew_installed_packages:
   - act
   - automake
@@ -116,6 +65,7 @@ homebrew_installed_packages:
 
 homebrew_taps: []
 
+# Install Homebrew cask apps (GUI apps)
 homebrew_cask_accept_external_apps: true
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -133,6 +83,53 @@ homebrew_cask_apps:
   - teamviewer
   - tableplus
   - zen
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - 'App Store'
+  - Safari
+  - FaceTime
+  - Maps
+  - Photos
+  - Contacts
+  - Reminders
+  - Books
+
+dockitems_persist:
+  - name: "Mail"
+    path: "/System/Applications/Mail.app/"
+    pos: 1
+  - name: "Calendar"
+    path: "/System/Applications/Calendar.app/"
+    pos: 2
+  - name: "Notes"
+    path: "/System/Applications/Notes.app/"
+    pos: 3
+  - name: "System Settings"
+    path: "/System/Applications/System Settings.app/"
+    pos: 4
+  - name: "Ghostty"
+    path: "/Applications/Ghostty.app/"
+    pos: 5
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 6
+  - name: "Passwords"
+    path: "/Applications/Passwords.app/"
+    pos: 7
+  - name: "Obsidian"
+    path: "/Applications/Obsidian.app/"
+    pos: 8
+  - name: "IntelliJ IDEA CE"
+    path: "/Applications/IntelliJ IDEA CE.app/"
+    pos: 9
+  - name: "Zen"
+    path: "/Applications/Zen.app/"
+    pos: 10
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -155,215 +152,12 @@ mas_password: ""
 
 osx_script: "~/.osx --no-restart"
 
-# Install packages from other package managers.
-# Note: You are responsible for making sure the required package managers are
-# installed, eg. through homebrew.
 composer_packages: []
-# - name: drush
-#   state: present # present/absent, default: present
-#   version: "^8.1" # default: N/A
-gem_packages:
-  - name: abbrev
-    state: present
-    version: "~> 0.1.2"
-  - name: bootsnap
-    state: present
-    version: "~> 1.18.4"
-  - name: brakeman
-    state: present
-    version: "~> 7.0.2"
-  - name: bundler-audit
-    state: present
-    version: "~> 0.9.2"
-  - name: csv
-    state: present
-    version: "~> 3.3.2"
-  - name: did_you_mean
-    state: present
-    version: "~> 2.0.0"
-  - name: digest
-    state: present
-    version: "~> 3.2.0"
-  - name: english
-    state: present
-    version: "~> 0.8.0"
-  - name: erb
-    state: present
-    version: "~> 4.0.4"
-  - name: error_highlight
-    state: present
-    version: "~> 0.7.0"
-  - name: etc
-    state: present
-    version: "~> 1.4.5"
-  - name: faker
-    state: present
-    version: "~> 3.5.1"
-  - name: fcntl
-    state: present
-    version: "~> 1.2.0"
-  - name: fiddle
-    state: present
-    version: "~> 1.1.6"
-  - name: find
-    state: present
-    version: "~> 0.2.0"
-  - name: getoptlong
-    state: present
-    version: "~> 0.2.1"
-  - name: io-nonblock
-    state: present
-    version: "~> 0.3.1"
-  - name: io-wait
-    state: present
-    version: "~> 0.3.1"
-  - name: kamal
-    state: present
-    version: "~> 2.5.3"
-  - name: matrix
-    state: present
-    version: "~> 0.4.2"
-  - name: mutex_m
-    state: present
-    version: "~> 0.3.0"
-  - name: net-ftp
-    state: present
-    version: "~> 0.3.8"
-  - name: net-http
-    state: present
-    version: "~> 0.6.0"
-  - name: nkf
-    state: present
-    version: "~> 0.2.0"
-  - name: observer
-    state: present
-    version: "~> 0.1.2"
-  - name: open-uri
-    state: present
-    version: "~> 0.5.0"
-  - name: open3
-    state: present
-    version: "~> 0.2.1"
-  - name: optparse
-    state: present
-    version: "~> 0.6.0"
-  - name: pathname
-    state: present
-    version: "~> 0.4.0"
-  - name: prime
-    state: present
-    version: "~> 0.1.3"
-  - name: pstore
-    state: present
-    version: "~> 0.1.4"
-  - name: rails
-    state: present
-    version: "~> 8.0.2"
-  - name: rails
-    state: present
-    version: "~> 8.0.1"
-  - name: rails
-    state: present
-    version: "~> 7.2.2.1"
-  - name: readline
-    state: present
-    version: "~> 0.0.4"
-  - name: repl_type_completor
-    state: present
-    version: "~> 0.1.9"
-  - name: resolv-replace
-    state: present
-    version: "~> 0.1.1"
-  - name: rinda
-    state: present
-    version: "~> 0.2.0"
-  - name: rss
-    state: present
-    version: "~> 0.3.1"
-  - name: ruby-lsp
-    state: present
-    version: "~> 0.23.24"
-  - name: ruby-lsp
-    state: present
-    version: "~> 0.23.23"
-  - name: ruby2_keywords
-    state: present
-    version: "~> 0.0.5"
-  - name: set
-    state: present
-    version: "~> 1.1.1"
-  - name: shellwords
-    state: present
-    version: "~> 0.2.2"
-  - name: solid_cable
-    state: present
-    version: "~> 3.0.7"
-  - name: solid_cache
-    state: present
-    version: "~> 1.0.7"
-  - name: solid_queue
-    state: present
-    version: "~> 1.1.5"
-  - name: solid_queue
-    state: present
-    version: "~> 1.1.4"
-  - name: specific_install
-    state: present
-    version: "~> 0.3.8"
-  - name: strscan
-    state: present
-    version: "~> 3.1.2"
-  - name: syntax_suggest
-    state: present
-    version: "~> 2.0.2"
-  - name: syslog
-    state: present
-    version: "~> 0.2.0"
-  - name: tempfile
-    state: present
-    version: "~> 0.3.1"
-  - name: thruster
-    state: present
-    version: "~> 0.1.13"
-  - name: thruster
-    state: present
-    version: "~> 0.1.12"
-  - name: tmpdir
-    state: present
-    version: "~> 0.3.1"
-  - name: tsort
-    state: present
-    version: "~> 0.2.0"
-  - name: typeprof
-    state: present
-    version: "~> 0.30.1"
-  - name: un
-    state: present
-    version: "~> 0.3.0"
-  - name: uuid7
-    state: present
-    version: "~> 0.2.0"
-  - name: weakref
-    state: present
-    version: "~> 0.1.3"
-  - name: yaml
-    state: present
-    version: "~> 0.4.0"
-  - name: zlib
-    state: present
-    version: "~> 3.2.1"
+gem_packages: []
 npm_packages: []
-# - name: webpack
-#   state: present # present/absent/latest, default: present
-#   version: "^2.6" # default: N/A
-pip_packages:
-  - name: pip
-    state: present
-    version: "==24.3.1"
-  - name: PyYAML
-    state: present
-    version: "==6.0.2"
+pip_packages: []
 
+# VSCode configuration (run after Homebrew/cask install)
 # Set to 'true' to configure VSCode.
 configure_vscode: true
 vscode_base_path: "~/Library/Application Support/Code"
