@@ -47,3 +47,6 @@
 
 # Ignore logs or temp files (add more as needed)
 *.log
+
+# Ignore specific configuration files
+.config/ohmyposh/larserikfinholt.omp.json
