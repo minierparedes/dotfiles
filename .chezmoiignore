@@ -1,0 +1,49 @@
+# Ignore system and cache files
+.DS_Store
+.Trash/
+.cache/
+.local/share/
+.zcompdump*
+.zsh_history
+.psql_history
+.viminfo
+
+# Ignore backup, lock, and session files
+*.backup
+*.swp
+*.lock
+.zsh_sessions/
+
+# Ignore tool-generated or ephemeral content
+.bundle/
+.cargo/
+.gem/
+.npm/
+.pnpm-state/
+.yarn/
+.node_repl_history
+#.swiftpm/
+.terraform.d/
+#.ansible/
+#.ansible-bootstrap/
+.cocoapods/
+.cups/
+.dlv/
+#.expo/
+.orbstack/
+.th-client/
+#.docker/
+.expo/
+.ghostty/  # Remove if you want to manage its config
+
+# Ignore secrets and sensitive data (customize as needed)
+.ssh/
+.boto
+
+# Ignore old or machine-specific config files
+.zshrc.backup
+.zshrc.pre-oh-my-zsh
+'.zcompdump-*'
+
+# Ignore logs or temp files (add more as needed)
+*.log
