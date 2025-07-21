@@ -1,0 +1,307 @@
+---
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+configure_sudoers: false
+
+# Install Homebrew formulae (CLI tools)
+homebrew_installed_packages:
+  - act
+  - automake
+  - chezmoi
+  - cmake
+  - curl
+  - direnv
+  - exercism
+  - ffmpeg
+  - fzf
+  - git-filter-repo
+  - git-lfs
+  - gitui
+  - golang-migrate
+  - golangci-lint
+  - graphviz
+  - hashicorp/tap/terraform
+  - icu4c@76
+  - jq
+  - libressl
+  - llvm@19
+  - nodenv
+  - p7zip
+  - pnpm
+  - postgresql@14
+  - pyenv
+  - python-packaging
+  - rbenv
+  - sqlc
+  - streamlink
+  - unar
+  - yt-dlp
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
+  - gh
+  - go
+  - gpg
+  - httpie
+  - libevent
+  - nmap
+  - openssh
+  - ssh-copy-id
+  - readline
+  - mas
+  - openssl
+  - zsh-history-substring-search
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-syntax-highlighting
+  - tmux
+  - tree
+  - zoxide
+  - oh-my-posh
+
+homebrew_taps: []
+
+# Install Homebrew cask apps (GUI apps)
+homebrew_cask_accept_external_apps: true
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - ghostty
+  - orbstack
+  - slack
+  - raycast
+  - alt-tab
+  - visual-studio-code
+  - anki
+  - intellij-idea-ce
+  - nextcloud
+  - obsidian
+  - mongodb-realm-studio
+  - teamviewer
+  - tableplus
+  - zen
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - 'App Store'
+  - Safari
+  - FaceTime
+  - Maps
+  - Photos
+  - Contacts
+  - Reminders
+  - Books
+
+dockitems_persist:
+  - name: "Mail"
+    path: "/System/Applications/Mail.app/"
+    pos: 1
+  - name: "Calendar"
+    path: "/System/Applications/Calendar.app/"
+    pos: 2
+  - name: "Notes"
+    path: "/System/Applications/Notes.app/"
+    pos: 3
+  - name: "System Settings"
+    path: "/System/Applications/System Settings.app/"
+    pos: 4
+  - name: "Ghostty"
+    path: "/Applications/Ghostty.app/"
+    pos: 5
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 6
+  - name: "Passwords"
+    path: "/Applications/Passwords.app/"
+    pos: 7
+  - name: "Obsidian"
+    path: "/Applications/Obsidian.app/"
+    pos: 8
+  - name: "IntelliJ IDEA CE"
+    path: "/Applications/IntelliJ IDEA CE.app/"
+    pos: 9
+  - name: "Zen"
+    path: "/Applications/Zen.app/"
+    pos: 10
+
+# See `geerlingguy.mac.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - id: 668429425
+    name: "Downcast"
+  - id: 1044549675
+    name: "Elmedia Video Player"
+  - id: 409183694
+    name: "Keynote"
+  - id: 539883307
+    name: "LINE"
+  - id: 441258766
+    name: "Magnet"
+  - id: 905953485
+    name: "NordVPN"
+  - id: 497799835
+    name: "Xcode"
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+composer_packages: []
+gem_packages: []
+npm_packages: []
+pip_packages: []
+
+# VSCode configuration (run after Homebrew/cask install)
+# Set to 'true' to configure VSCode.
+configure_vscode: true
+vscode_base_path: "~/Library/Application Support/Code"
+vscode_config_path: "User"
+vscode_settings:
+  editor.largeFileOptimizations: false
+  editor.minimap.enabled: false
+  editor.tabCompletion: onlySnippets
+  editor.wordWrap: 'on'
+  files.autoSave: onFocusChange
+  git.autofetch: true
+  highlight-matching-tag.styles:
+    closing:
+      full:
+        custom:
+          dark:
+            borderColor: white
+            borderRadius: 4px
+            borderStyle: solid
+            borderWidth: 0 0 1px 0
+            right: 10px
+          light:
+            borderColor: brown
+            borderRadius: 4px
+            borderStyle: solid
+            borderWidth: 0 0 1px 0
+            right: 10px
+    opening:
+      left:
+        underline: yellow
+      name:
+        highlight: rgba(180, 20, 80, 0.3)
+      right:
+        surround: '#155FFA'
+  liveServer.settings.donotShowInfoMsg: true
+  security.workspace.trust.untrustedFiles: open
+  window.autoDetectColorScheme: true
+  workbench.colorTheme: "SynthWave '84"
+  workbench.iconTheme: material-icon-theme
+  workbench.preferredDarkColorTheme: "SynthWave '84"
+  workbench.preferredHighContrastColorTheme: "SynthWave '84"
+  workbench.preferredHighContrastLightColorTheme: "Serendipity Morning"
+  workbench.preferredLightColorTheme: "GitHub Light"
+  vscode_extensions:
+    - name: anikethsaha.htmllinter
+      state: present
+    - name: antfu.iconify
+      state: present
+    - name: bradlc.vscode-tailwindcss
+      state: present
+    - name: chakrounanas.turbo-console-log
+      state: present
+    - name: davidanson.vscode-markdownlint
+      state: present
+    - name: dbaeumer.vscode-eslint
+      state: present
+    - name: deinsoftware.vitest-snippets
+      state: present
+    - name: docker.docker
+      state: present
+    - name: dotup.dotup-vscode-interface-generator
+      state: present
+    - name: emeraldwalk.runonsave
+      state: present
+    - name: esbenp.prettier-vscode
+      state: present
+    - name: github.copilot
+      state: present
+    - name: github.copilot-chat
+      state: present
+    - name: github.github-vscode-theme
+      state: present
+    - name: github.vscode-github-actions
+      state: present
+    - name: golang.go
+      state: present
+    - name: htmlhint.vscode-htmlhint
+      state: present
+    - name: jake-demian.project-hierarchy-explorer
+      state: present
+    - name: jebbs.plantuml
+      state: present
+    - name: leneti.yaml-fm-lint
+      state: present
+    - name: mariusalchimavicius.json-to-ts
+      state: present
+    - name: mattpocock.ts-error-translator
+      state: present
+    - name: mechatroner.rainbow-csv
+      state: present
+    - name: mohd-akram.vscode-html-format
+      state: present
+    - name: mohsen1.prettify-json
+      state: present
+    - name: ms-azuretools.vscode-containers
+      state: present
+    - name: ms-azuretools.vscode-docker
+      state: present
+    - name: ms-python.debugpy
+      state: present
+    - name: ms-python.python
+      state: present
+    - name: ms-python.vscode-pylance
+      state: present
+    - name: ms-vscode-remote.remote-containers
+      state: present
+    - name: ms-vscode.makefile-tools
+      state: present
+    - name: ms-vscode.vscode-typescript-next
+      state: present
+    - name: oderwat.indent-rainbow
+      state: present
+    - name: pkief.material-icon-theme
+      state: present
+    - name: quicktype.quicktype
+      state: present
+    - name: rangav.vscode-thunder-client
+      state: present
+    - name: ritwickdey.liveserver
+      state: present
+    - name: robbowen.synthwave-vscode
+      state: present
+    - name: sdras.vue-vscode-snippets
+      state: present
+    - name: stylelint.vscode-stylelint
+      state: present
+    - name: vincaslt.highlight-matching-tag
+      state: present
+    - name: vitest.explorer
+      state: present
+    - name: vsls-contrib.gitdoc
+      state: present
+    - name: vue.volar
+      state: present
+    - name: well-ar.plantuml
+      state: present
+    - name: wicked-labs.wvsc-serendipity
+      state: present
+    - name: willjleong.nuxt-typescript-snippets
+      state: present
+    - name: wmaurer.change-case
+      state: present
+    - name: yzhang.markdown-all-in-one
+      state: present
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []

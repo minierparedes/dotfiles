@@ -1,0 +1,21 @@
+---
+- name: Ensure VSCode config directory exists.
+  file:
+    path: "{{ vscode_base_path }}/{{ vscode_config_path }}"
+    state: directory
+
+- name: Ensure VSCode user settings are configured.
+  copy:
+    content: |
+      {{ vscode_settings | to_nice_json }}
+    dest: "{{ vscode_base_path }}/{{ vscode_config_path }}/settings.json"
+    mode: '0644'
+
+# Optional: Install extensions if `vscode_extensions` is defined
+- name: Ensure VSCode extensions are installed.
+  when: vscode_extensions is defined
+  loop: "{{ vscode_extensions }}"
+  loop_control:
+    label: "{{ item }}"
+  command: "code --install-extension {{ item }}"
+  changed_when: false
