@@ -30,7 +30,6 @@ homebrew_installed_packages:
   - p7zip
   - pnpm
   - postgresql@14
-  - postgresql@15
   - pyenv
   - python-packaging
   - rbenv
