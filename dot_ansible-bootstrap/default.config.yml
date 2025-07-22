@@ -17,6 +17,7 @@ homebrew_installed_packages:
   - fzf
   - git-filter-repo
   - git-lfs
+  - git-flow
   - gitui
   - golang-migrate
   - golangci-lint
