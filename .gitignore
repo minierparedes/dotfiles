@@ -5,7 +5,6 @@
 Thumbs.db
 
 # Ignore chezmoi's own state
-.chezmoiscripts
 /private_*
 /secrets_*
 
@@ -29,8 +28,6 @@ secrets_*
 .ssh/
 .gnupg/
 
-# Chez moi state/scripts
-# .chezmoiscripts
 
 # Machine-specific config
 .local/
