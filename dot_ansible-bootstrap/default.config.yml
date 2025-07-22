@@ -79,6 +79,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - anki
   - intellij-idea-ce
+  - webstorm
   - nextcloud
   - obsidian
   - mongodb-realm-studio
