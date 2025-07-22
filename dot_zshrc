@@ -61,13 +61,6 @@ source ~/.zsh/fzf-tab/fzf-tab.plugin.zsh
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ------------------------
-# Cloud SDK
-# ------------------------
-GCLOUD_DIR="$HOME/Developer/fairway-buddies-app/google-cloud-sdk 2"
-[[ -f "$GCLOUD_DIR/path.zsh.inc" ]] && source "$GCLOUD_DIR/path.zsh.inc"
-[[ -f "$GCLOUD_DIR/completion.zsh.inc" ]] && source "$GCLOUD_DIR/completion.zsh.inc"
-
-# ------------------------
 # Direnv
 # ------------------------
 if command -v direnv &>/dev/null; then
