@@ -64,6 +64,8 @@ homebrew_installed_packages:
   - tree
   - zoxide
   - oh-my-posh
+  - fd
+  - swiftformat
 
 homebrew_taps: []
 
@@ -86,6 +88,7 @@ homebrew_cask_apps:
   - teamviewer
   - tableplus
   - zen
+  - swiftformat-for-xcode
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -93,7 +96,7 @@ dockitems_remove:
   - Launchpad
   - TV
   - Podcasts
-  - 'App Store'
+  - "App Store"
   - Safari
   - FaceTime
   - Maps
@@ -169,7 +172,7 @@ vscode_settings:
   editor.largeFileOptimizations: false
   editor.minimap.enabled: false
   editor.tabCompletion: onlySnippets
-  editor.wordWrap: 'on'
+  editor.wordWrap: "on"
   files.autoSave: onFocusChange
   git.autofetch: true
   highlight-matching-tag.styles:
@@ -194,7 +197,7 @@ vscode_settings:
       name:
         highlight: rgba(180, 20, 80, 0.3)
       right:
-        surround: '#155FFA'
+        surround: "#155FFA"
   liveServer.settings.donotShowInfoMsg: true
   security.workspace.trust.untrustedFiles: open
   window.autoDetectColorScheme: true
