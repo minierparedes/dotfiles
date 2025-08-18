@@ -5,6 +5,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$HOME/go/bin:$PNPM_HOME:$PYENV_ROOT/bin:/usr/local/opt/postgresql@17/bin:$PATH"
 export PYTORCH_ENABLE_MPS_FALLBACK=1
+export GPG_TTY=$(tty)
 
 # =========================
 # Prompt (choose one)
