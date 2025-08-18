@@ -41,6 +41,11 @@ fi
 autoload -Uz compinit
 compinit
 
+# --- fzf-tab (manual GitHub clone) ---
+if [ -f "$HOME/.config/fzf-tab/fzf-tab.plugin.zsh" ]; then
+  source "$HOME/.config/fzf-tab/fzf-tab.plugin.zsh"
+fi
+
 # =========================
 # Zsh Plugins via Homebrew
 # =========================
@@ -60,11 +65,6 @@ if [ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.
   source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
 
-# --- fzf-tab (if installed via Homebrew) ---
-if [ -f "$(brew --prefix)/opt/fzf-tab/share/fzf-tab/fzf-tab.plugin.zsh" ]; then
-  source "$(brew --prefix)/opt/fzf-tab/share/fzf-tab/fzf-tab.plugin.zsh"
-fi
-
 # =========================
 # Other Plugins
 # =========================
@@ -72,11 +72,6 @@ fi
 # --- zoxide ---
 if command -v zoxide &>/dev/null; then
   eval "$(zoxide init --cmd cd zsh)"
-fi
-
-# --- fzf-tab (if installed via Homebrew) ---
-if [ -f "$(brew --prefix)/opt/fzf-tab/share/fzf-tab/fzf-tab.plugin.zsh" ]; then
-  source "$(brew --prefix)/opt/fzf-tab/share/fzf-tab/fzf-tab.plugin.zsh"
 fi
 
 # =========================
