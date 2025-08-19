@@ -13,9 +13,8 @@
 	preloadIndex = true
 [credential]
 	helper = osxkeychain
-
 [commit]
 	gpgsign = true
 [push]
-	autoSetupRemote = true
 	default = current
+	autoSetupRemote = true
