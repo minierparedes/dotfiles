@@ -1,0 +1,21 @@
+[user]
+	name = minierparedes
+	email = 3thancr0wn@gmail.com
+	signingkey = A605C02B4082B24C8BBE1FC60DE58E2111A88F63
+[init]
+	defaultBranch = develop
+[color]
+	ui = true
+[core]
+	excludesFile = /Users/minierparedes/.config/git/ignore
+	compression = 9
+	whitespace = error
+	preloadIndex = true
+[credential]
+	helper = osxkeychain
+
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+	default = current
