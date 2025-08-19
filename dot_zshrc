@@ -102,7 +102,7 @@ alias denvrc='echo dotenv > .envrc && touch .env && direnv allow'
 # =========================
 # Editor
 # =========================
-export EDITOR="code --wait"
+export EDITOR="zed --wait"
 
 # =========================
 # End of .zshrc
