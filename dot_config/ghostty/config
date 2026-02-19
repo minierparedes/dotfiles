@@ -23,8 +23,10 @@ window-padding-balance = true
 window-save-state = always
 macos-titlebar-style = transparent
 window-colorspace = "display-p3"
-window-padding-x = 16
-window-padding-y = 16
+window-padding-left = 16
+window-padding-right = 16
+window-padding-x = 10
+window-padding-y = 10
 # background = "000000"
 # foreground = "ffffff"
 
