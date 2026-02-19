@@ -1,12 +1,8 @@
 font-family = JetBrains Mono NL Regular,Symbols Nerd Font Mono
 font-size = 16
 
-# To use auto light/dark switching, use the next line (uncomment and edit filenames if you want this mode):
 theme = light:GitHub Light Default,dark:GitHub Dark Default
-
-# To use just one theme, keep the following line active, making sure the theme file and spelling/casing matches:
 #theme = GitHub-Dark-High-Contrast
-
 # shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 cursor-style-blink = true
@@ -23,8 +19,6 @@ window-padding-balance = true
 window-save-state = always
 macos-titlebar-style = transparent
 window-colorspace = "display-p3"
-window-padding-left = 16
-window-padding-right = 16
 window-padding-x = 10
 window-padding-y = 10
 # background = "000000"
