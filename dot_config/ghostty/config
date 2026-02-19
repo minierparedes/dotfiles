@@ -1,16 +1,17 @@
-font-family = JetBrains Mono
-font-family = Symbols Nerd Font Mono
+font-family = JetBrains Mono, Symbols Nerd Font Mono
 font-size = 16
-# theme = light:GitHub-Light-High-Contrast,dark:GitHub-Dark-High-Contrast
-# theme = GitHub-Dark-High-Contrast
-theme = GitHub-Light-High-Contrast
-# theme = light:GitHub-Light,dark:GitHub-Dark
+
+# To use auto light/dark switching, use the next line (uncomment and edit filenames if you want this mode):
+theme = light:GitHub-Light-High-Contrast,dark:GitHub-Dark-High-Contrast
+
+# To use just one theme, keep the following line active, making sure the theme file and spelling/casing matches:
+theme = GitHub-Dark-High-Contrast
+
 # shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 cursor-style-blink = true
 adjust-cell-height = 35%
 background-opacity = 0.96
-
 
 # custom-shader = /Users/ethancrown/.config/ghostty/ghostty-shaders/bloom.glsl
 
@@ -19,11 +20,10 @@ mouse-scroll-multiplier = 2
 
 window-padding-balance = true
 window-save-state = always
-macos-titlebar-style=transparent
+macos-titlebar-style = transparent
 window-colorspace = "display-p3"
 # background = "000000"
 # foreground = "ffffff"
-
 
 # keybindings
 keybind = cmd+s>r=reload_config
