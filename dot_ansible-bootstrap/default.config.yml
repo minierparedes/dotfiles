@@ -75,16 +75,13 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - ghostty
   - orbstack
-  - slack
   - raycast
   - alt-tab
   - visual-studio-code
+  - zed
   - anki
-  - intellij-idea-ce
-  - webstorm
   - nextcloud
   - obsidian
-  - mongodb-realm-studio
   - teamviewer
   - tableplus
   - zen
@@ -130,8 +127,8 @@ dockitems_persist:
   - name: "Obsidian"
     path: "/Applications/Obsidian.app/"
     pos: 8
-  - name: "IntelliJ IDEA CE"
-    path: "/Applications/IntelliJ IDEA CE.app/"
+  - name: "Zed"
+    path: "/Applications/Zed.app/"
     pos: 9
   - name: "Zen"
     path: "/Applications/Zen.app/"
