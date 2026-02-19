@@ -1,7 +1,7 @@
 [user]
 	name = minierparedes
 	email = 3thancr0wn@gmail.com
-	signingkey = A605C02B4082B24C8BBE1FC60DE58E2111A88F63
+	signingkey = 040E233745BDBFE21BF62B79543D55E32C76D64A
 [init]
 	defaultBranch = develop
 [color]
@@ -18,3 +18,5 @@
 [push]
 	default = current
 	autoSetupRemote = true
+[gpg]
+	program = gpg
