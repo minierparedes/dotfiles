@@ -20,3 +20,5 @@
 	autoSetupRemote = true
 [gpg]
 	program = gpg
+[agent]
+    allow-loopback-pinentry = true
