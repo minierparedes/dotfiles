@@ -1,8 +1,8 @@
 font-family = JetBrains Mono
 font-family = Symbols Nerd Font Mono
 font-size = 16
-# theme = light:GitHub-Light-High-Contrast,dark:GitHub-Dark-High-Contrast
-theme = GitHub-Dark-High-Contrast
+theme = light:GitHub-Light-High-Contrast,dark:GitHub-Dark-High-Contrast
+# theme = GitHub-Dark-High-Contrast
 # theme = light:GitHub-Light,dark:GitHub-Dark
 # shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
