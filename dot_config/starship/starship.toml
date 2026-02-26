@@ -140,7 +140,6 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 detect_files = ['Package.swift', '*.swift']
 detect_folders = ['.build']
 detect_extensions = ['swift']
-command_timeout = 1000
 
 [docker_context]
 symbol = ""
