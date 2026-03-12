@@ -96,6 +96,7 @@ alias gl="git log --graph --pretty=format:'%C(yellow)%h%Creset %ad | %s%C(bold b
 alias lg="git log --graph --pretty=format:'%C(yellow)%h%Creset %ad | %s%d' --date=short"
 alias lga="git log --graph --pretty=format:'%C(yellow)%h%Creset %ad | %s %Cgreen<%ae>%Creset' --date=short"
 alias ll="git log --pretty=oneline"
+alias grl="git reflog --pretty=format:'%C(yellow)%h%Creset %C(cyan)%gd%Creset %Cgreen%ad%Creset | %s%C(bold blue)%d%Creset' --date=short"
 alias dev="pnpm dev"
 alias denvrc='echo dotenv > .envrc && touch .env && direnv allow'
 
