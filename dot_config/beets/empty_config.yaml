@@ -8,5 +8,4 @@ import:
 
 plugins:
   - musicbrainz # Example plugin for fetching metadata
-  - autotagger # fetching metadata during import
   # - ... other plugins you want ...
