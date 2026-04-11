@@ -1,0 +1,12 @@
+directory: ~/Users/minierparedes/Library/CloudStorage/Nextcloud-ethancr0wn@cloud․hogarnet․duckdns․org/Audio/Music
+library: ~/Users/minierparedes/Library/CloudStorage/Nextcloud-ethancr0wn@cloud․hogarnet․duckdns․org/Audio/data/musiclibrary.db
+
+import:
+  copy: no # Use files in place
+  write: yes # Don't modify tags
+  # move: no # Move files to new location
+
+plugins:
+  - musicbrainz # Example plugin for fetching metadata
+  - autotagger # fetching metadata during import
+  # - ... other plugins you want ...
