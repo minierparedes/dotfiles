@@ -102,6 +102,9 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 symbol = " "
 style = "bg:color_blue"
 format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+detect_files = ['Gemfile', '.ruby-version', 'Rakefile', '*.gemspec']
+detect_extensions = ['rb']
+detect_folders = ['.bundle']
 
 [golang]
 symbol = ""
