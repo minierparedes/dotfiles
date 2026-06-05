@@ -9,11 +9,11 @@ export GPG_TTY=$(tty)
 export PATH="$HOME/bin:$PATH"
 
 # =========================
-# Prompt (choose one)
+# Prompt
 # =========================
 
 # --- STARSHIP PROMPT ---
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+export STARSHIP_CONFIG="${HOME}/.config/starship.toml"
 eval "$(starship init zsh)"
 
 # # Oh My Posh (uncomment to enable)
