@@ -14,12 +14,12 @@ export PATH="$HOME/bin:$PATH"
 
 # --- STARSHIP PROMPT ---
 # export STARSHIP_CONFIG="${HOME}/.config/starship/starship.toml"
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-eval "$(starship init zsh)"
+# export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+# eval "$(starship init zsh)"
 
 # # Oh My Posh (uncomment to enable)
-# export POSH_THEME="json"
-# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/${POSH_THEME}.omp.json)"
+export POSH_THEME="json"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/${POSH_THEME}.omp.json)"
 
 # =========================
 # Language environment managers
