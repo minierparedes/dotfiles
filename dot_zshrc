@@ -13,9 +13,9 @@ export PATH="$HOME/bin:$PATH"
 # =========================
 
 # --- STARSHIP PROMPT ---
-export STARSHIP_CONFIG="${HOME}/.config/starship/starship.toml"
+# export STARSHIP_CONFIG="${HOME}/.config/starship/starship.toml"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
-# export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 # # Oh My Posh (uncomment to enable)
 # export POSH_THEME="json"
