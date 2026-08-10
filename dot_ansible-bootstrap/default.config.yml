@@ -7,65 +7,59 @@ configure_sudoers: false
 # Install Homebrew formulae (CLI tools)
 homebrew_installed_packages:
   - act
+  - ansible
   - automake
+  - bat
+  - biome
   - chezmoi
   - cmake
-  - curl
   - direnv
+  - doxygen
   - eza
+  - fd
   - ffmpeg
   - fzf
+  - gh
+  - gifsicle
+  - git
   - git-filter-repo
-  - git-lfs
   - git-flow
+  - git-lfs
   - gitui
+  - gnupg
   - golang-migrate
   - golangci-lint
   - graphviz
-  - hashicorp/tap/terraform
-  - icu4c@76
+  - httpie
   - jq
   - libressl
   - llvm@19
-  - nodenv
+  - markdownlint-cli2
+  - mas
+  - nmap
+  - oh-my-posh
   - p7zip
+  - periphery
+  - pinentry-mac
   - pnpm
-  - postgresql@14
   - postgresql@15
   - pyenv
   - python-packaging
-  - rbenv
+  - rust
   - sqlc
+  - ssh-copy-id
+  - starship
   - streamlink
+  - swiftformat
+  - swiftlint
+  - tree
   - unar
   - yt-dlp
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - gh
-  - go
-  - gpg
-  - httpie
-  - libevent
-  - nmap
-  - openssh
-  - ssh-copy-id
-  - readline
-  - mas
-  - openssl
-  - zsh-history-substring-search
+  - zoxide
   - zsh-autosuggestions
   - zsh-completions
+  - zsh-history-substring-search
   - zsh-syntax-highlighting
-  - tmux
-  - tree
-  - zoxide
-  - oh-my-posh
-  - fd
-  - swiftformat
 
 homebrew_taps: []
 
