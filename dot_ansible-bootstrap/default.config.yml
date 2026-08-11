@@ -135,16 +135,12 @@ mas_installed_apps:
     name: "Downcast"
   - id: 1044549675
     name: "Elmedia Video Player"
-  - id: 409183694
-    name: "Keynote"
   - id: 539883307
     name: "LINE"
   - id: 441258766
     name: "Magnet"
   - id: 905953485
     name: "NordVPN"
-  - id: 497799835
-    name: "Xcode"
 mas_email: ""
 mas_password: ""
 
