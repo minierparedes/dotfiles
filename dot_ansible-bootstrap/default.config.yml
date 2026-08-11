@@ -64,20 +64,21 @@ homebrew_installed_packages:
 homebrew_taps: []
 
 # Install Homebrew cask apps (GUI apps)
+# The following problematic casks were removed to avoid network/TTY failures during bootstrap:
+# - magnet
+# - nextcloud
+# - teamviewer
 homebrew_cask_accept_external_apps: true
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - ghostty
   - orbstack
   - raycast
-  - magnet
   - alt-tab
   - visual-studio-code
   - zed
   - anki
-  - nextcloud
   - obsidian
-  - teamviewer
   - tableplus
   - zen
   - swiftformat-for-xcode
@@ -299,7 +300,6 @@ vscode_settings:
     - name: wmaurer.change-case
       state: present
     - name: yzhang.markdown-all-in-one
-      state: present
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
