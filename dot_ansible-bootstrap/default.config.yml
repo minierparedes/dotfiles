@@ -39,7 +39,6 @@ homebrew_installed_packages:
   - nmap
   - oh-my-posh
   - p7zip
-  - periphery
   - pinentry-mac
   - pnpm
   - postgresql@15
