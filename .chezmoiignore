@@ -37,7 +37,8 @@
 .ghostty/  # Remove if you want to manage its config
 
 # Ignore secrets and sensitive data (customize as needed)
-.ssh/
+.ssh/*
+!.ssh/config
 .boto
 
 # Ignore old or machine-specific config files

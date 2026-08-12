@@ -1,7 +1,7 @@
 [user]
 	name = minierparedes
 	email = 3thancr0wn@gmail.com
-	signingkey = A605C02B4082B24C8BBE1FC60DE58E2111A88F63
+	signingkey = 99BBE955721040B32939891D0725591A2236A8C8
 [init]
 	defaultBranch = develop
 [color]
