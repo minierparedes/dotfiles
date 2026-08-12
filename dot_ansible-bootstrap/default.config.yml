@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - markdownlint-cli2
   - mas
   - nmap
+  - node
   - oh-my-posh
   - p7zip
   - pinentry-mac
