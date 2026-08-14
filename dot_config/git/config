@@ -11,6 +11,7 @@
 	compression = 9
 	whitespace = error
 	preloadIndex = true
+	precomposeUnicode = true
 [credential]
 	helper = osxkeychain
 [commit]
