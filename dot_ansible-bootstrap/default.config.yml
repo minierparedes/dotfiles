@@ -71,20 +71,20 @@ homebrew_taps: []
 homebrew_cask_accept_external_apps: true
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - anki
   - ghostty
   - orbstack
+  - obsidian
   - raycast
-  - alt-tab
+  - Sanyam-G/switch/switch
+  - swiftformat-for-xcode
+  - tableplus
   - visual-studio-code
   - zed
-  - anki
-  - obsidian
-  - tableplus
   - zen
-  - swiftformat-for-xcode
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove:
   - Launchpad
   - TV
