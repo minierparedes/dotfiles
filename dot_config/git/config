@@ -3,7 +3,7 @@
 	email = 3thancr0wn@gmail.com
 	signingkey = 99BBE955721040B32939891D0725591A2236A8C8
 [init]
-	defaultBranch = develop
+	defaultBranch = main
 [color]
 	ui = true
 [core]
@@ -12,6 +12,11 @@
 	whitespace = error
 	preloadIndex = true
 	precomposeUnicode = true
+	pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
 [credential]
 	helper = osxkeychain
 [commit]
@@ -19,6 +24,12 @@
 [push]
 	default = current
 	autoSetupRemote = true
+[merge]
+	conflictStyle = zdiff3
+[diff]
+	algorithm = histogram
+[rerere]
+	enabled = true
 [gpg]
 	program = gpg
 [agent]
