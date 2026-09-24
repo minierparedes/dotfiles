@@ -1,11 +1,14 @@
 [user]
 	name = minierparedes
 	email = 3thancr0wn@gmail.com
-	signingkey = 99BBE955721040B32939891D0725591A2236A8C8
+	signingkey = 0CB99DCB47D459A55DA9A856E2F1B92117913BDD
+
+[credential]
+	helper = osxkeychain
+
 [init]
 	defaultBranch = main
-[color]
-	ui = true
+
 [core]
 	excludesFile = /Users/minierparedes/.config/git/ignore
 	compression = 9
@@ -13,24 +16,36 @@
 	preloadIndex = true
 	precomposeUnicode = true
 	pager = delta
-[interactive]
-    diffFilter = delta --color-only
+
 [delta]
     navigate = true
-[credential]
-	helper = osxkeychain
+    side-by-side = true
+
+[interactive]
+    diffFilter = delta --color-only
+
 [commit]
 	gpgsign = true
+
 [push]
 	default = current
+
 	autoSetupRemote = true
+
 [merge]
 	conflictStyle = zdiff3
+
 [diff]
 	algorithm = histogram
+
 [rerere]
 	enabled = true
+
 [gpg]
 	program = gpg
+
 [agent]
     allow-loopback-pinentry = true
+
+[color]
+	ui = true
