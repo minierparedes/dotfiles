@@ -28,10 +28,11 @@
   "scrollbar": {"show": "never" },
   "gutter": {"min_line_number_digits": 0 },
   "drag_and_drop_selection": {"enabled": false },
-  "auto_indent": "syntax_aware",
+  "auto_indent": "none",
   "auto_indent_on_paste": false,
   "auto_update": false,
   "extend_comment_on_newline": false,
   "horizontal_scroll_margin": 1,
   "vertical_scroll_margin": 1,
+  "soft_wrap": "editor_width"
 }
