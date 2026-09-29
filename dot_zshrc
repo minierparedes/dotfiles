@@ -52,9 +52,9 @@ fi
 # =========================
 
 # Zsh Autosuggestions (source from Homebrew location)
-if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-fi
+#if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+#  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+#fi
 
 # Zsh History Substring Search
 if [ -f "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" ]; then
@@ -104,6 +104,15 @@ alias denvrc='echo dotenv > .envrc && touch .env && direnv allow'
 # Editor
 # =========================
 export EDITOR="zed --wait"
+
+# =========================
+# Deja
+# =========================
+if [[ -r "$HOME/.local/share/deja/init.zsh" ]]; then
+  source "$HOME/.local/share/deja/init.zsh"
+else
+  eval "$(deja init zsh)"
+fi
 
 # =========================
 # End of .zshrc
