@@ -1,16 +1,22 @@
-font-family = JetBrains Mono NL Regular,Symbols Nerd Font Mono
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-style = Light
 font-size = 16
 
 theme = light:GitHub Light Default,dark:GitHub Dark Default
-#theme = GitHub-Dark-High-Contrast
-# shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 cursor-style-blink = true
+
+# Prevents the shell prompt from forcing a beam/line cursor
+shell-integration-features = no-cursor
+
 adjust-cell-height = 35%
 background-opacity = 0.8
 background-blur = 90
 
+
+
 # custom-shader = /Users/ethancrown/.config/ghostty/ghostty-shaders/bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor_warp.glsl
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
