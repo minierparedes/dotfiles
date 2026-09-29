@@ -17,9 +17,6 @@ export PATH="$HOME/bin:$PATH"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
-# # Oh My Posh (uncomment to enable)
-# export POSH_THEME="json"
-# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/${POSH_THEME}.omp.json)"
 
 # =========================
 # Language environment managers
@@ -51,17 +48,21 @@ fi
 # Zsh Plugins via Homebrew
 # =========================
 
-# Zsh Autosuggestions (source from Homebrew location)
-#if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-#  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-#fi
-
 # Zsh History Substring Search
 if [ -f "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" ]; then
   source "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 fi
 
-# Zsh Syntax Highlighting (should be sourced last)
+# =========================
+# Deja (Must be sourced BEFORE syntax highlighting)
+# =========================
+if [[ -r "$HOME/.local/share/deja/init.zsh" ]]; then
+  source "$HOME/.local/share/deja/init.zsh"
+else
+  eval "$(deja init zsh)"
+fi
+
+# Zsh Syntax Highlighting (MUST ALWAYS BE SOURCED LAST)
 if [ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
   source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
@@ -104,15 +105,6 @@ alias denvrc='echo dotenv > .envrc && touch .env && direnv allow'
 # Editor
 # =========================
 export EDITOR="zed --wait"
-
-# =========================
-# Deja
-# =========================
-if [[ -r "$HOME/.local/share/deja/init.zsh" ]]; then
-  source "$HOME/.local/share/deja/init.zsh"
-else
-  eval "$(deja init zsh)"
-fi
 
 # =========================
 # End of .zshrc
